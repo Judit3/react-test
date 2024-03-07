@@ -4,6 +4,9 @@ import React from "react";
 //   return <h1>Hello</h1>
 // }
 
-const FunctionalGreetingWithProps = () => <h1>Hello you</h1>
+const FunctionalGreetingWithProps = (props) => {
+    console.log(props);
+    <h1>Hello you, {props.greeting}</h1>;
+}
 
 export default FunctionalGreetingWithProps;
